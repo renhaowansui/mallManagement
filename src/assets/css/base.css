@@ -1,0 +1,123 @@
+html {
+  background:white;
+  color:black;
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  margin: 0;
+  padding: 0;
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea {
+  font:12px \5b8b\4f53,arial,sans-serif;
+}
+/* 去掉 table cell 的边距并让其边重合 */
+table {
+  border-collapse:collapse;
+  border-spacing: 0;
+}
+/* ie bug：th 不继承 text-align */
+th {
+  text-align:inherit;
+}
+/* 去除默认边框 */
+fieldset,img {
+  border:none;
+}
+
+
+/* 去掉列表前的标识，li 会继承 */
+ol,ul {
+  list-style:none;
+}
+/* 对齐是排版最重要的因素，别让什么都居中 */
+caption,th {
+  text-align:left;
+}
+
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+  text-decoration:none;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+  overflow:hidden;
+}
+.clearfix {
+  zoom:1; /* for ie6 & ie7 */
+}
+.clear {
+  clear:both;
+  display:block;
+  font-size:0;
+  height:0;
+  line-height:0;
+  overflow:hidden;
+}
+/* 设置显示和隐藏，通常用来与 js 配合 */
+.hide {
+  display:none;
+}
+.block {
+  display:block;
+}
+/* 设置浮动，减少浮动带来的 bug */
+.fl,.fr {
+  display:inline;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+
+
+.el-container{
+  height: 100vh;
+  min-width: 1300px;
+  color: white;
+  font-size: 20px;
+}
+.el-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  line-height: 70px;
+  background-color: #666;
+}
+.el-aside {
+  background-color: #333744;
+  height: 100%;
+}
+.el-aside .collapseBut {
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.el-menu {
+  border: none;
+}
+.el-submenu__title{
+  text-align: left;
+}
+.el-main {
+  background-color: #E9EEF3;
+  color: #333;
+  height: 100%;
+}
+.el-table__body, .el-table__footer, .el-table__header{
+  table-layout: auto;
+}
+.box-card {
+  margin-top: 20px;
+  border-radius: 5px;
+  background: white;
+}
