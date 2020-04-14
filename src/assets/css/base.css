@@ -116,6 +116,22 @@ ins,a {
 .el-table__body, .el-table__footer, .el-table__header{
   table-layout: auto;
 }
+.el-scrollbar__wrap{
+  height: 300px !important;
+}
+.el-input__inner{
+  height: 31px !important;
+}
+.el-dialog__body img{
+  width: 100%;
+}
+.el-form-item__label{
+  float: none !important;
+}
+.ql-container{
+  height: 300px !important;
+  margin-bottom: 20px !important;
+}
 .box-card {
   margin-top: 20px;
   border-radius: 5px;

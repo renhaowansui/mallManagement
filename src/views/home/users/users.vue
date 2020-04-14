@@ -124,7 +124,7 @@
         <el-button type="primary" @click="editUserTo">确 定</el-button>
       </span>
     </el-dialog>
-    <!-- 分配用户角色 -->
+    <!-- 分配用户角色对话框 -->
     <el-dialog
       title="分配角色"
       :visible.sync="setRoleDialogVisible"

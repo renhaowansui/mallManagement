@@ -22,7 +22,7 @@
           <el-menu-item :index="subItem.path" 
                         v-for="(subItem, subIndex) in item.children"
                         :key="subIndex"
-                        @click="itemClick()">
+                        @click="itemClick">
             <i class="el-icon-s-operation"></i>
             <span slot="title">{{subItem.authName}}</span>
           </el-menu-item>
@@ -71,7 +71,8 @@ export default {
     },
     itemClick(){
       const pathStr = this.$route.path.split('/')
-      this.currentIndex = pathStr[2]
+      console.log(pathStr)
+      this.currentIndex = pathStr[1]
     }
   },
   watch: {
