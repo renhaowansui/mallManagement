@@ -1,4 +1,6 @@
 import axios from 'axios'
+import nProgress from 'nprogress'
+
 
 export function request(config){
   const instance = axios.create({
@@ -7,6 +9,7 @@ export function request(config){
   })
 
   instance.interceptors.request.use(config => {
+    nProgress.start()
     // 拦截处理请求代码
     // 添加请求头token
     config.headers.Authorization = window.sessionStorage.getItem('token')
@@ -14,7 +17,7 @@ export function request(config){
   })
   instance.interceptors.response.use(config => {
     // 拦截处理响应代码
-
+    nProgress.done();
     return config.data
   })
   return instance(config)

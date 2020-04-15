@@ -5,6 +5,7 @@ import store from './store'
 import './plugins/element.js'
 import 'assets/css/base.css'
 import 'assets/fonts/iconfont.css'
+import 'nprogress/nprogress.css'
 
 // 导入符文版编辑器
 import VueQuillEditor from 'vue-quill-editor'
